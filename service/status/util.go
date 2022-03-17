@@ -46,11 +46,11 @@ func createDesc(state string) string {
 	case core.StatusError:
 		return "Build encountered an error"
 	case core.StatusFailing:
-		return "Build is failing"
+		return "Build is failed"
 	case core.StatusKilled:
 		return "Build was killed"
 	case core.StatusPassing:
-		return "Build is passing"
+		return "Build is passed"
 	case core.StatusWaiting:
 		return "Build is pending"
 	case core.StatusPending:
