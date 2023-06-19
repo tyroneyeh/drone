@@ -1,5 +1,90 @@
 # Changelog
 
+## [v2.17.0](https://github.com/harness/drone/tree/v2.17.0) (2023-04-25)
+
+[Full Changelog](https://github.com/harness/drone/compare/v2.16.0...v2.17.0)
+
+**Implemented enhancements:**
+
+- Add `authtype` to logging middleware [\#3310](https://github.com/harness/drone/pull/3310) ([colinhoglund](https://github.com/colinhoglund))
+- Add config for the buffer [\#3308](https://github.com/harness/drone/pull/3308) ([TheJokersThief](https://github.com/TheJokersThief))
+
+**Fixed bugs:**
+
+- store/card: fix dropped error [\#3300](https://github.com/harness/drone/pull/3300) ([alrs](https://github.com/alrs))
+- bump drone-ui to 2.9.1 [\#3298](https://github.com/harness/drone/pull/3298) ([d1wilko](https://github.com/d1wilko))
+- Starlark: Update `go.starlark.net` dependency [\#3284](https://github.com/harness/drone/pull/3284) ([dsotirakis](https://github.com/dsotirakis))
+
+**Merged pull requests:**
+
+- bump drone-ui to 2.11.1 [\#3315](https://github.com/harness/drone/pull/3315) ([d1wilko](https://github.com/d1wilko))
+- bump drone-ui to 2.11.0 [\#3313](https://github.com/harness/drone/pull/3313) ([d1wilko](https://github.com/d1wilko))
+- bump drone-ui to 2.10.0 [\#3311](https://github.com/harness/drone/pull/3311) ([d1wilko](https://github.com/d1wilko))
+- \(maint\) move to use the arm64 pool [\#3296](https://github.com/harness/drone/pull/3296) ([tphoney](https://github.com/tphoney))
+
+## [v2.16.0](https://github.com/harness/drone/tree/v2.16.0) (2022-12-15)
+
+[Full Changelog](https://github.com/harness/drone/compare/v2.15.0...v2.16.0)
+
+**Implemented enhancements:**
+
+- Make Starlark file size limit configurable [\#3291](https://github.com/harness/drone/pull/3291) ([andrii-kasparevych](https://github.com/andrii-kasparevych))
+- Enhance status check label for promotions [\#3263](https://github.com/harness/drone/pull/3263) ([michelangelomo](https://github.com/michelangelomo))
+
+**Fixed bugs:**
+
+- \(bugfix\) bump go-scm to v1.28.0 [\#3290](https://github.com/harness/drone/pull/3290) ([tphoney](https://github.com/tphoney))
+
+**Merged pull requests:**
+
+- \(maint\) 2.16.0 release prep [\#3295](https://github.com/harness/drone/pull/3295) ([tphoney](https://github.com/tphoney))
+
+## [v2.15.0](https://github.com/harness/drone/tree/v2.15.0) (2022-10-28)
+
+[Full Changelog](https://github.com/harness/drone/compare/v2.14.0...v2.15.0)
+
+**Implemented enhancements:**
+
+- bump ui version [\#3279](https://github.com/harness/drone/pull/3279) ([d1wilko](https://github.com/d1wilko))
+- Add endpoint for allowing admins to force rotate a user's token [\#3272](https://github.com/harness/drone/pull/3272) ([ShiftedMr](https://github.com/ShiftedMr))
+
+**Merged pull requests:**
+
+- release prep v2.15.0 [\#3281](https://github.com/harness/drone/pull/3281) ([d1wilko](https://github.com/d1wilko))
+
+## [v2.14.0](https://github.com/harness/drone/tree/v2.14.0) (2022-10-18)
+
+[Full Changelog](https://github.com/harness/drone/compare/v2.13.0...v2.14.0)
+
+**Implemented enhancements:**
+
+- \(DRON-418\) send webhook and set status for failed builds [\#3266](https://github.com/harness/drone/pull/3266) ([tphoney](https://github.com/tphoney))
+
+**Merged pull requests:**
+
+- v2.14.0 release prep [\#3275](https://github.com/harness/drone/pull/3275) ([d1wilko](https://github.com/d1wilko))
+
+## [v2.13.0](https://github.com/harness/drone/tree/v2.13.0) (2022-09-21)
+
+[Full Changelog](https://github.com/harness/drone/compare/v2.12.1...v2.13.0)
+
+**Implemented enhancements:**
+
+- feat: update drone-yaml module [\#3249](https://github.com/harness/drone/pull/3249) ([jimsheldon](https://github.com/jimsheldon))
+- support time zone [\#3241](https://github.com/harness/drone/pull/3241) ([zc2638](https://github.com/zc2638))
+
+**Fixed bugs:**
+
+- update discourse.drone.io to community.harness.io [\#3261](https://github.com/harness/drone/pull/3261) ([kit101](https://github.com/kit101))
+- \(DRON-392\) cascade deletes on purge [\#3243](https://github.com/harness/drone/pull/3243) ([tphoney](https://github.com/tphoney))
+- Template converter, don't skip .yaml extension. [\#3242](https://github.com/harness/drone/pull/3242) ([staffanselander](https://github.com/staffanselander))
+
+**Merged pull requests:**
+
+- v2.13.0 release prep [\#3268](https://github.com/harness/drone/pull/3268) ([tphoney](https://github.com/tphoney))
+- \(maint\) disable arm builds [\#3262](https://github.com/harness/drone/pull/3262) ([tphoney](https://github.com/tphoney))
+- Update links to discourse in issue template [\#3233](https://github.com/harness/drone/pull/3233) ([alikhil](https://github.com/alikhil))
+
 ## [v2.12.1](https://github.com/harness/drone/tree/v2.12.1) (2022-06-15)
 
 [Full Changelog](https://github.com/harness/drone/compare/v2.12.0...v2.12.1)
@@ -12,6 +97,7 @@
 
 **Merged pull requests:**
 
+- release prep for v2.12.1 [\#3232](https://github.com/harness/drone/pull/3232) ([eoinmcafee00](https://github.com/eoinmcafee00))
 - \(maint\) fix starlark test on windows [\#3230](https://github.com/harness/drone/pull/3230) ([tphoney](https://github.com/tphoney))
 - \(maint\) fix unit tests so they pass on windows [\#3228](https://github.com/harness/drone/pull/3228) ([tphoney](https://github.com/tphoney))
 - Update Readme to Fix Typo [\#3223](https://github.com/harness/drone/pull/3223) ([hrittikhere](https://github.com/hrittikhere))

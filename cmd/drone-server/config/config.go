@@ -30,7 +30,7 @@ import (
 // IMPORTANT please do not add new configuration parameters unless it has
 // been discussed on the mailing list. We are attempting to reduce the
 // number of configuration parameters, and may reject pull requests that
-// introduce new parameters. (mailing list https://discourse.drone.io)
+// introduce new parameters. (mailing list https://community.harness.io)
 
 // default runner hostname.
 var hostname string
@@ -103,6 +103,7 @@ type (
 		Interval time.Duration `envconfig:"DRONE_CLEANUP_INTERVAL"         default:"24h"`
 		Running  time.Duration `envconfig:"DRONE_CLEANUP_DEADLINE_RUNNING" default:"24h"`
 		Pending  time.Duration `envconfig:"DRONE_CLEANUP_DEADLINE_PENDING" default:"24h"`
+		Buffer   time.Duration `envconfig:"DRONE_CLEANUP_BUFFER" default:"30m"`
 	}
 
 	// Cron provides the cron configuration.
@@ -148,6 +149,7 @@ type (
 	Starlark struct {
 		Enabled   bool   `envconfig:"DRONE_STARLARK_ENABLED"`
 		StepLimit uint64 `envconfig:"DRONE_STARLARK_STEP_LIMIT"`
+		SizeLimit uint64 `envconfig:"DRONE_STARLARK_SIZE_LIMIT" default:"0"`
 	}
 
 	// License provides license configuration
@@ -581,7 +583,7 @@ func configureGithub(c *Config) {
 
 func kubernetesServiceConflict(c *Config) error {
 	if strings.HasPrefix(c.Server.Port, "tcp://") {
-		return errors.New("Invalid port configuration. See https://discourse.drone.io/t/drone-server-changing-ports-protocol/4144")
+		return errors.New("Invalid port configuration. See https://community.harness.io/t/drone-server-changing-ports-protocol/11400")
 	}
 	return nil
 }
